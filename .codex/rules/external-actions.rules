@@ -3,16 +3,31 @@
 
 prefix_rule(
     pattern = ["git", "push"],
-    decision = "prompt",
-    justification = "Pushing changes affects the remote repository and requires confirmation.",
-    match = ["git push", "git push origin main"],
+    decision = "allow",
+    justification = "Project branches may be pushed without another prompt; protected main and required CI remain the enforcement boundary.",
+    match = ["git push", "git push --set-upstream origin codex/github-governance"],
 )
 
 prefix_rule(
-    pattern = ["gh", "pr", "create"],
+    pattern = ["gh", "pr", ["create", "edit", "ready", "merge"]],
+    decision = "allow",
+    justification = "The owner authorized autonomous PR lifecycle actions for this repository when checks pass and rollback is practical.",
+    match = [
+        "gh pr create --draft",
+        "gh pr edit 2 --add-label documentation",
+        "gh pr ready 2",
+        "gh pr merge 2 --squash --delete-branch",
+    ],
+)
+
+prefix_rule(
+    pattern = ["gh", "repo", ["edit", "delete"]],
     decision = "prompt",
-    justification = "Opening a pull request is an external write and requires confirmation.",
-    match = ["gh pr create", "gh pr create --draft"],
+    justification = "Repository visibility, governance, or deletion changes still require explicit approval.",
+    match = [
+        "gh repo edit gospoddddd/goldingame --visibility private",
+        "gh repo delete gospoddddd/goldingame",
+    ],
 )
 
 prefix_rule(

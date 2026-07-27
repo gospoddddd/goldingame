@@ -17,7 +17,8 @@ review_after: 2026-08-03
 - Codex имеет полный локальный read/write-доступ внутри папки проекта; внешние действия требуют отдельного подтверждения.
 - OpenAI Developer Docs MCP включён; остальные интеграции подключаются поэтапно после появления конкретной системы-источника.
 - Зафиксированы workflow для экспериментов, daily content packs и readiness review, а также proposed engineering quality strategy.
-- Подготовлены локальный GitHub Actions quality check, PR workflow и единый risk register; remote и branch protection ещё не созданы.
+- Создан приватный GitHub-репозиторий `gospoddddd/goldingame`; `origin/main` является базовой веткой, bootstrap публикуется через `codex/project-bootstrap`.
+- Подготовлены GitHub Actions quality check, PR workflow и единый risk register; required check и branch protection ещё не включены.
 - До отдельного review продукт считается самостоятельной generic-basketball платформой без официальных логотипов, фото, видео и неразрешённых источников данных.
 
 ## Принято
@@ -36,6 +37,7 @@ review_after: 2026-08-03
 5. Источник данных и бюджет на лицензию.
 6. Модель регистрации, возраста, приватности и монетизации.
 7. Технологический стек после уточнения MVP.
+8. Публичное название продукта; `goldingame` сейчас является именем репозитория, а `Redraft` — рабочим названием концепции.
 
 ## Активные риски
 

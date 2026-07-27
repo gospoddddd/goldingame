@@ -17,7 +17,7 @@ review_after: 2026-08-10
 | Возможность | Решение сейчас | Причина |
 |---|---|---|
 | OpenAI Developer Docs MCP | Enabled глобально | Актуальная документация Codex и OpenAI |
-| GitHub plugin/connector | Доступен, подключать после появления remote | Issues, PR, review и CI становятся полезны только с репозиторием |
+| GitHub plugin/connector | Private remote `gospoddddd/goldingame` создан | PR, review и CI; writes только по явному запросу |
 | Browser / Computer Use | Использовать после появления интерфейса | Реальный mobile-flow, accessibility и smoke QA |
 | Obsidian MCP | Не добавлять | Vault доступен как обычные versioned-файлы |
 | Filesystem или Git MCP | Не добавлять | Нативных средств Codex достаточно |
@@ -30,7 +30,7 @@ review_after: 2026-08-10
 
 Project Stop hook запускает `scripts/validate_workspace.py` перед завершением хода Codex. Изменённый hook требует повторного trust-review в Codex.
 
-Локально подготовлен GitHub Actions workflow `Workspace Quality`. До создания remote он является проверяемым scaffold, но не подтверждённым required check.
+GitHub Actions workflow `Workspace Quality` опубликован в bootstrap-ветке. До успешного первого run и настройки branch protection он не считается required check.
 
 ## Условия допуска MCP или connector
 

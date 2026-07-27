@@ -1,0 +1,4 @@
+interface:
+  display_name: "Game Market Research"
+  short_description: "Compare sports games with traceable evidence"
+  default_prompt: "Use $research-game-market to research comparable sports games and record evidence-backed findings."

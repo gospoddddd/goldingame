@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Readiness Review"
+  short_description: "Review gates before prototype, beta, or release"
+  default_prompt: "Use $review-product-readiness to assess whether this Redraft scope is ready for its next stage."

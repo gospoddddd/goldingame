@@ -1,0 +1,4 @@
+interface:
+  display_name: "Feature Delivery"
+  short_description: "Ship a scoped feature with checks and context"
+  default_prompt: "Use $deliver-feature to implement this scoped feature and leave verified project context behind."

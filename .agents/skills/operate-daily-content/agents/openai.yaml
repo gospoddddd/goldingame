@@ -1,0 +1,4 @@
+interface:
+  display_name: "Daily Content Operations"
+  short_description: "Build and validate deterministic daily game packs"
+  default_prompt: "Use $operate-daily-content to prepare, validate, version, or correct this Redraft daily content pack."

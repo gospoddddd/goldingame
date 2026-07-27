@@ -1,0 +1,58 @@
+# Project filesystem access is defined in ../config.toml.
+# These rules only govern commands that request execution outside that sandbox.
+
+prefix_rule(
+    pattern = ["git", "push"],
+    decision = "prompt",
+    justification = "Pushing changes affects the remote repository and requires confirmation.",
+    match = ["git push", "git push origin main"],
+)
+
+prefix_rule(
+    pattern = ["gh", "pr", "create"],
+    decision = "prompt",
+    justification = "Opening a pull request is an external write and requires confirmation.",
+    match = ["gh pr create", "gh pr create --draft"],
+)
+
+prefix_rule(
+    pattern = [["npm", "pnpm"], "publish"],
+    decision = "prompt",
+    justification = "Publishing a package is an external production action and requires confirmation.",
+    match = ["npm publish", "pnpm publish"],
+)
+
+prefix_rule(
+    pattern = ["docker", "push"],
+    decision = "prompt",
+    justification = "Pushing an image changes an external registry and requires confirmation.",
+    match = ["docker push registry.example.com/redraft:latest"],
+)
+
+prefix_rule(
+    pattern = ["terraform", ["apply", "destroy"]],
+    decision = "prompt",
+    justification = "Infrastructure changes require explicit confirmation.",
+    match = ["terraform apply", "terraform destroy"],
+)
+
+prefix_rule(
+    pattern = ["kubectl", ["apply", "delete"]],
+    decision = "prompt",
+    justification = "Cluster mutations require explicit confirmation.",
+    match = ["kubectl apply -f deployment.yaml", "kubectl delete pod redraft"],
+)
+
+prefix_rule(
+    pattern = ["sudo"],
+    decision = "forbidden",
+    justification = "System-level elevation is outside this project. Use project-local tooling instead.",
+    match = ["sudo npm install", "sudo rm -rf build"],
+)
+
+prefix_rule(
+    pattern = [["shutdown", "reboot", "halt"]],
+    decision = "forbidden",
+    justification = "Machine power operations are outside this project.",
+    match = ["shutdown -h now", "reboot", "halt"],
+)

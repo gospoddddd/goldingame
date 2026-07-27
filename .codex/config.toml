@@ -1,0 +1,33 @@
+# Full local control inside this repository, with the rest of the filesystem
+# denied except for the minimal runtime paths required by developer tools.
+#
+# This uses the permission-profile system. Do not combine it with sandbox_mode
+# or [sandbox_workspace_write] in this project config.
+default_permissions = "redraft-local"
+approval_policy = "on-request"
+
+[permissions.redraft-local]
+description = "Full read/write access inside Redraft; local development network only."
+
+[permissions.redraft-local.filesystem]
+":root" = "deny"
+":minimal" = "read"
+":tmpdir" = "write"
+":slash_tmp" = "write"
+"/Users/kpriyma/Documents/redraft" = "write"
+
+[permissions.redraft-local.network]
+enabled = true
+allow_local_binding = true
+
+[permissions.redraft-local.network.domains]
+"localhost" = "allow"
+"127.0.0.1" = "allow"
+"::1" = "allow"
+
+[features]
+hooks = true
+
+[agents]
+enabled = true
+max_concurrent_threads_per_session = 4

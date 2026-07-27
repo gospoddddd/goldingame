@@ -1,0 +1,17 @@
+{
+  "description": "Validate Redraft configuration and vault structure before Codex finishes a turn.",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$(git rev-parse --show-toplevel)/.codex/hooks/stop_validate_workspace.py\"",
+            "timeout": 15,
+            "statusMessage": "Validating Redraft workspace"
+          }
+        ]
+      }
+    ]
+  }
+}

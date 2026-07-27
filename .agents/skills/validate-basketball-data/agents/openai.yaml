@@ -1,0 +1,4 @@
+interface:
+  display_name: "Basketball Data Validation"
+  short_description: "Check sports data provenance quality and rights"
+  default_prompt: "Use $validate-basketball-data to assess this dataset or provider before we depend on it."

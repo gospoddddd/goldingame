@@ -32,7 +32,7 @@ source_urls:
 
 - [Larry Birdle](https://larrybirdle.com/) показывает Daily и Practice, угадывание игрока по атрибутам и Share Score.
 - [HoopGrids](https://hoopgrids.com/) — daily grid-паттерн и связанные баскетбольные игры.
-- [82-0](https://www.82-0.com/) — ориентир для механик построения состава.
+- [82-0](https://www.82-0.com/) — ориентир для механик построения состава; отдельное наблюдение публичного 1v1-flow: [[82-0 1v1 Observation]].
 - [LINEUPS](https://lineups.hoopgrids.com/) и [I Called Game](https://icalledgame.hoopgrids.com/about) — кандидаты для отдельного прохода по контенту, rarity и коллекционным элементам.
 
 ## Выводы-гипотезы

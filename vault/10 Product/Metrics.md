@@ -24,11 +24,18 @@ review_after: 2026-08-10
 - Share intent и фактический share.
 - Challenge recipient: click → start → complete.
 - Переход во вторую игру после появления портфеля.
+- Доля завершений в ranked-режиме и повторных ranked-сессий.
+- Распределение долгосрочного skill rating по игре.
+- Позиция и активность в сезонной лиге, сезонный возврат и переход между divisions.
+- Ranked attempt → result view → leaderboard view → следующая ranked-сессия.
+- После появления 1v1: queue start → opponent found → match start → complete → replay.
+- Доля игроков, которые понимают причину изменения рейтинга.
 
 ## Guardrails
 
 - Подтверждённые ошибки и неоднозначные ответы.
 - Доля игроков, не понимающих результат.
+- Жалобы на нечестный рейтинг, smurfing, cheating и разницу сложности между локализациями.
 - Crash rate и p95 latency.
 - Время редактора на один daily.
 - Жалобы на права, контент и приватность.

@@ -10,7 +10,7 @@ review_after: 2026-08-27
 
 # Project Home
 
-Redraft — рабочее название платформы коротких баскетбольных игр. Эта страница — маршрутизатор, а не полный контекст.
+Goldingame — рабочее название competitive-платформы коротких баскетбольных игр для увлечённых фанатов NBA. Эта страница — маршрутизатор, а не полный контекст.
 
 ## Загрузить в начале задачи
 
@@ -43,6 +43,7 @@ Redraft — рабочее название платформы коротких 
 - [[../40 Research/Competitor Patterns|Competitor Patterns]]
 - [[../50 Decisions/ADR-0001 Project knowledge system|ADR-0001 Project knowledge system]]
 - [[../50 Decisions/ADR-0002 Repository governance|ADR-0002 Repository governance]]
+- [[../50 Decisions/ADR-0003 Competitive progression model|ADR-0003 Competitive progression model]]
 
 ## Поставка
 

@@ -12,9 +12,11 @@ review_after: 2026-08-03
 
 | ID | Результат | Связь | Приоритет | Статус |
 |---|---|---|---|---|
-| DISC-001 | Выбрать первый сегмент и географию | [[../10 Product/Audience|Audience]] | P0 | Open |
+| DISC-001 | Зафиксировать первую географию привлечения и порядок запуска RU/EN | [[../10 Product/Audience|Audience]] | P0 | Open |
 | DISC-002 | Сформулировать три игровые петли для ручного теста | [[../20 Games/Game Portfolio|Game Portfolio]] | P0 | Open |
 | DISC-003 | Провести 10–15 интервью | [[../10 Product/Audience|Audience]] | P0 | Open |
+| COMP-001 | Выбрать первый competitive-формат MVP и прототип двухслойного рейтинга | [[../50 Decisions/ADR-0003 Competitive progression model|ADR-0003]] | P0 | In Progress |
+| COMP-002 | Спроектировать queue-based 1v1 после подтверждения флагманской петли | [[../40 Research/82-0 1v1 Observation|82-0 observation]] | P1 | Blocked |
 | EXP-001 | Проверить три прототипа на 20–30 игроках | [[../10 Product/Assumption Register|Assumptions]] | P0 | Open |
 | OPS-001 | Вручную подготовить семь daily-паков | [[Roadmap]] | P0 | Open |
 | LEGAL-001 | Определить оператора, территории и требуемый IP review | [[../10 Product/Pre-code Gates|Pre-code Gates]] | P0 | Blocked |

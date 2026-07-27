@@ -16,18 +16,18 @@ review_after: 2026-08-10
 
 ## Phase 1 — Manual daily test
 
-Результат: семь последовательных daily, измерены completion, понимание, return intent, share и контентная стоимость.
+Результат: семь последовательных same-seed daily, измерены completion, понимание рейтинга, return intent, share и контентная стоимость.
 
 ## Phase 2 — Technical MVP
 
-Результат: mobile-first web-версия одной игры, deterministic seed, versioned content pack, результат, share/challenge и базовая аналитика.
+Результат: mobile-first web-версия одной игры, deterministic seed, versioned content pack, объяснимый provisional skill rating, мировой/friends leaderboard, share/challenge и базовая аналитика.
 
 ## Phase 3 — Closed beta
 
-Результат: когортные D1/D7-метрики, correction workflow, abuse guardrails и стабильная ежедневная операция.
+Результат: когортные D1/D7-метрики, первая сезонная лига, correction workflow, abuse guardrails и стабильная ежедневная операция.
 
 ## Phase 4 — Portfolio decision
 
 Результат: решение продолжать флагман, добавить вторую игру или изменить позиционирование.
 
-Нативные приложения, live multiplayer, большая экономика и публичный ranked leaderboard не входят в текущий scope.
+Нативные приложения, большая экономика, асинхронный challenge-response и единый cross-game рейтинг не входят в текущий scope. Queue-based 1v1 входит в целевой продукт, но может быть отложен после первого MVP и требует достаточного player pool, session reliability и abuse guardrails.

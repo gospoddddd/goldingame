@@ -1,0 +1,4 @@
+interface:
+  display_name: "Basketball Game Design"
+  short_description: "Turn a game idea into a testable product spec"
+  default_prompt: "Use $design-basketball-game to turn this basketball game idea into a testable specification."

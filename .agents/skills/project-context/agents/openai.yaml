@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Context"
+  short_description: "Read and maintain the project knowledge vault"
+  default_prompt: "Use $project-context to find the relevant project context and update the vault after the task."

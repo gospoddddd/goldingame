@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Experiment"
+  short_description: "Turn a hypothesis into a decision-ready experiment"
+  default_prompt: "Use $run-product-experiment to design, run, or evaluate this Redraft product experiment."

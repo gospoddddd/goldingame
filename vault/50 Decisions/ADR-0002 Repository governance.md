@@ -23,7 +23,8 @@ superseded_by:
 - Запускать validator из project Stop hook; изменённый hook требует trust-review.
 - Запускать тот же contract в GitHub Actions с read-only `contents` permission.
 - Использовать pull request template для scope, gates, verification и rollback.
-- После появления remote сделать CI check обязательным и включить branch protection.
+- Защитить `main`: требовать PR, актуальный успешный `Validate project configuration` и закрытые обсуждения; запретить force-push и удаление, применять правила к администратору.
+- Для solo workflow не требовать второго approving review; владелец разрешает Codex самостоятельно вести и сливать проверенные PR.
 - Не связывать этот workflow с автоматическим production deploy.
 - Хранить исполнимые задачи в vault Backlog; GitHub issues в будущем могут быть execution mirrors только со стабильным project ID.
 
@@ -31,7 +32,8 @@ superseded_by:
 
 - Ошибка структуры или сломанная ссылка обнаруживается локально до PR.
 - Добавление нового обязательного project artifact требует обновить validator.
-- CI уже готов к включению, но не выполняется до появления GitHub remote.
+- Локальный `make check` и required GitHub check используют один contract; изменение не попадает в `main` при красной проверке.
+- Отсутствие обязательного второго reviewer сохраняет скорость solo workflow, но повышает важность CI, scoped diff review и обратимости.
 - Product-specific lint, tests, security и browser jobs будут добавлены после выбора стека.
 - Stop hook является guardrail, а не единственной enforcement boundary.
 

@@ -21,7 +21,7 @@ review_after: 2026-08-03
 | DATA-001 | Выбрать и проверить источник curated MVP | [[../30 Data/Data Source Register|Data Source Register]] | P0 | Blocked |
 | TECH-001 | Выбрать стек после фиксации MVP | [[../10 Product/Pre-code Gates|Pre-code Gates]] | P1 | Blocked |
 | OPS-002 | Зафиксировать schema и validator первого daily content pack | [[../70 Operations/Engineering Quality Strategy|Engineering Quality]] | P1 | Blocked |
-| INT-001 | Включить required check и branch protection для `main` | [[../70 Operations/Tooling and Integration Strategy|Integration Strategy]] | P1 | In Progress |
+| INT-001 | Включить required check и branch protection для `main` | [[../70 Operations/Tooling and Integration Strategy|Integration Strategy]] | P1 | Completed |
 | QA-001 | Расширить CI product-specific quality lanes после выбора стека | [[../70 Operations/Engineering Quality Strategy|Engineering Quality]] | P1 | Blocked |
 
 Backlog — единственное место для исполнимых задач. Roadmap хранит результаты и этапы.

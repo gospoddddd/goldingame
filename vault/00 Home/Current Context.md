@@ -17,8 +17,10 @@ review_after: 2026-08-03
 - Codex имеет полный локальный read/write-доступ внутри папки проекта; внешние действия требуют отдельного подтверждения.
 - OpenAI Developer Docs MCP включён; остальные интеграции подключаются поэтапно после появления конкретной системы-источника.
 - Зафиксированы workflow для экспериментов, daily content packs и readiness review, а также proposed engineering quality strategy.
-- Создан приватный GitHub-репозиторий `gospoddddd/goldingame`; `origin/main` является базовой веткой, bootstrap публикуется через `codex/project-bootstrap`.
-- Подготовлены GitHub Actions quality check, PR workflow и единый risk register; required check и branch protection ещё не включены.
+- Создан публичный GitHub-репозиторий `gospoddddd/goldingame`; bootstrap объединён в `main` через PR #1.
+- GitHub Actions workflow `Workspace Quality` успешно выполняет обязательную проверку `Validate project configuration`.
+- `main` защищён: изменения проходят через PR, required check должен быть актуален, обсуждения закрыты, force-push и удаление запрещены; правила действуют и для администратора.
+- Владелец разрешил Codex самостоятельно выполнять branch, push и PR lifecycle, включая merge после успешных проверок; production, публикации, расходы и опасные изменения остаются за отдельным подтверждением.
 - До отдельного review продукт считается самостоятельной generic-basketball платформой без официальных логотипов, фото, видео и неразрешённых источников данных.
 
 ## Принято

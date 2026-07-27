@@ -40,4 +40,4 @@ PR должен содержать:
 - failure и rollback behavior;
 - явное описание известных ограничений.
 
-Внешние действия — deploy, publish, purchase, push в защищённую ветку или изменение production — требуют отдельного разрешения.
+Для `gospoddddd/goldingame` разрешены самостоятельные branch, push и PR-действия, включая merge после успешных обязательных проверок. Обход защиты `main`, force-push общей истории, изменение visibility, release/package publish, deploy, purchase и любые production-изменения требуют отдельного разрешения.
